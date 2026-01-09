@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # SASS 編譯服務
+  sass-watcher:
+    # 使用 Debian 版本的 Node 16，比 Alpine 包含更多基礎工具，相容性較好
+    image: node:16
+    working_dir: /app
+    volumes:
+      - .:/app
+    # 啟動時自動安裝依賴，然後開始監聽 SASS
+    command: sh -c "npm install && npm run compile:scss"
+
+  # 網頁伺服器
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
