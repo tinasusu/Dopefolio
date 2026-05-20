@@ -32,7 +32,30 @@ for (let i = 0; i < headerSmallMenuLinks.length; i++) {
 
 // ---
 const headerLogoConatiner = document.querySelector('.header__logo-container')
+const lightbox = document.getElementById('lightbox')
 
-headerLogoConatiner.addEventListener('click', () => {
-  location.href = 'index.html'
-})
+if (headerLogoConatiner && lightbox) {
+  headerLogoConatiner.style.cursor = 'pointer'
+  headerLogoConatiner.addEventListener('click', () => {
+    lightbox.classList.add('active')
+  })
+}
+
+// ---
+const heroImgCont = document.querySelector('.home-hero__img-cont')
+
+if (heroImgCont && lightbox) {
+  heroImgCont.style.cursor = 'pointer'
+  heroImgCont.addEventListener('click', () => {
+    lightbox.classList.add('active')
+  })
+}
+
+// ---
+if (lightbox) {
+  lightbox.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('lightbox__img')) {
+      lightbox.classList.remove('active')
+    }
+  })
+}
