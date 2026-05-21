@@ -325,7 +325,7 @@ textarea {
   .home-hero .btn--bg {
     background: #d9a900;
     color: #24364f;
-    border-radius: 999px;
+    border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     padding: 1.6rem 4.2rem;
     font-size: 1.6rem;
@@ -588,8 +588,86 @@ textarea {
     .project-details__links-btn:last-child {
       margin: 0; }
       @media only screen and (max-width: 37.5em) {
-        .project-details__links-btn:last-child {
-          margin: 0; } }
+      .project-details__links-btn:last-child {
+        margin: 0; } }
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0; }
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 18rem minmax(0, 1fr);
+  gap: 4rem;
+  padding: 0 0 5.5rem;
+  margin-bottom: 5.5rem;
+  border-bottom: 1px solid rgba(100, 116, 139, 0.16); }
+  .experience-item:last-child {
+    margin-bottom: 0; }
+  @media only screen and (max-width: 56.25em) {
+    .experience-item {
+      grid-template-columns: 1fr;
+      gap: 1.8rem;
+      padding-bottom: 4.5rem;
+      margin-bottom: 4.5rem; } }
+  .experience-item__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    color: #64748b;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em; }
+  .experience-item__years {
+    color: #24364f;
+    font-weight: 600; }
+  .experience-item__company {
+    color: #24364f;
+    font-size: 3rem;
+    line-height: 1.08;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .experience-item__company {
+        font-size: 2.5rem; } }
+  .experience-item__title {
+    color: #64748b;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 2rem; }
+  .experience-item__summary {
+    color: #475569;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    max-width: 64rem;
+    margin-bottom: 2.8rem; }
+  .experience-item__section {
+    margin-bottom: 2.4rem; }
+    .experience-item__section:last-child {
+      margin-bottom: 0; }
+  .experience-item__label {
+    color: #24364f;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem; }
+  .experience-item__bullets {
+    margin: 0;
+    padding-left: 2rem;
+    color: #475569; }
+    .experience-item__bullets li {
+      font-size: 1.75rem;
+      line-height: 1.8;
+      margin-bottom: 1rem; }
+      .experience-item__bullets li:last-child {
+        margin-bottom: 0; }
+  .experience-item__tech {
+    color: #d9a900;
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 1.7; }
 
 .header {
   position: fixed;
@@ -703,7 +781,8 @@ textarea {
 
 .main-footer {
   background: #000;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 60vh; }
   .main-footer__upper {
     display: flex;
     justify-content: space-between;

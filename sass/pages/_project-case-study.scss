@@ -115,3 +115,111 @@
     }
   }
 }
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 18rem minmax(0, 1fr);
+  gap: 4rem;
+  padding: 0 0 5.5rem;
+  margin-bottom: 5.5rem;
+  border-bottom: 1px solid rgba(100, 116, 139, 0.16);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding-bottom: 4.5rem;
+    margin-bottom: 4.5rem;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    color: #64748b;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+  }
+
+  &__years {
+    color: #24364f;
+    font-weight: 600;
+  }
+
+  &__company {
+    color: #24364f;
+    font-size: 3rem;
+    line-height: 1.08;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__title {
+    color: #64748b;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  &__summary {
+    color: #475569;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    max-width: 64rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__section {
+    margin-bottom: 2.4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    color: #24364f;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.4rem;
+  }
+
+  &__bullets {
+    margin: 0;
+    padding-left: 2rem;
+    color: #475569;
+
+    li {
+      font-size: 1.75rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__tech {
+    color: #d9a900;
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+}
