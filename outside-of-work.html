@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="life-page">
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
@@ -84,49 +84,217 @@
       </div>
     </header>
 
-    <section class="project-cs-hero">
+    <section class="project-cs-hero life-hero">
       <div class="project-cs-hero__content">
         <h1 class="heading-primary">Outside of Work</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            The other side of me — yoga, movement, and a life lived with intention.
-          </p>
-        </div>
       </div>
     </section>
 
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
-          <div class="project-details__content-main">
-
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title">Yoga Teacher</h3>
-              <p class="project-details__desc-para">
-                I'm a certified yoga teacher — teaching has taught me as much
-                about communication and presence as it has about the practice
-                itself. There's something powerful about creating a space where
-                people slow down and reconnect with themselves.
-              </p>
-              <p class="project-details__desc-para">
-                I teach [style of yoga, e.g. Hatha / Vinyasa / Yin] and have been
-                practicing for [X] years. Whether it's a morning flow or a
-                restorative evening class, I love meeting people where they are.
-              </p>
+          <div class="project-details__content-main project-details__content-main--wide">
+            <div class="project-details__intro">
+              <div class="project-details__intro-copy">
+                <p class="project-details__intro-para">
+                  Outside of engineering, I enjoy sports and traveling.
+                </p>
+                <p class="project-details__intro-para">
+                  The things that slow life down and require long-term
+                  dedication and presence have deeply shaped the way I approach
+                  life, work, and the world around me.
+                </p>
+              </div>
             </div>
 
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title">Other Interests</h3>
-              <p class="project-details__desc-para">
-                Beyond the mat and the screen, I'm drawn to [your other interests —
-                e.g. photography, travel, reading, cooking, music...]. These
-                experiences outside of work constantly feed back into how I think
-                about design, people, and problems.
-              </p>
-              <p class="project-details__desc-para">
-                I believe that a full life makes for better work — and that
-                curiosity, in all directions, is worth following.
-              </p>
+            <div class="life-story">
+              <article class="life-story__block">
+                <div class="life-story__gallery" data-gallery>
+                  <div
+                    class="life-story__image life-story__image--photo is-active"
+                    data-gallery-main
+                    style="background-image: url('./assets/jpeg/life/yoga-1.jpg')"
+                  ></div>
+                  <div class="life-story__thumbs">
+                    <button
+                      type="button"
+                      class="life-story__thumb life-story__thumb--photo is-active"
+                      data-gallery-thumb
+                      data-image="./assets/jpeg/life/yoga-1.jpg"
+                      data-label="Yoga Practice"
+                      aria-label="Show yoga practice placeholder"
+                    >
+                      <img
+                        class="life-story__thumb-img"
+                        src="./assets/jpeg/life/yoga-1.jpg"
+                        alt="Yoga practice thumbnail"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="life-story__thumb life-story__thumb--photo"
+                      data-gallery-thumb
+                      data-image="./assets/jpeg/life/yoga-2.jpg"
+                      data-label="Teaching Space"
+                      aria-label="Show teaching space placeholder"
+                    >
+                      <img
+                        class="life-story__thumb-img"
+                        src="./assets/jpeg/life/yoga-2.jpg"
+                        alt="Teaching space thumbnail"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="life-story__thumb life-story__thumb--photo"
+                      data-gallery-thumb
+                      data-image="./assets/jpeg/life/yoga-3.jpg"
+                      data-label="India Retreat"
+                      aria-label="Show India retreat placeholder"
+                    >
+                      <img
+                        class="life-story__thumb-img"
+                        src="./assets/jpeg/life/yoga-3.jpg"
+                        alt="India retreat thumbnail"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="life-story__thumb life-story__thumb--photo"
+                      data-gallery-thumb
+                      data-image="./assets/jpeg/life/yoga-4.png"
+                      data-label="Yoga in Practice"
+                      aria-label="Show yoga practice placeholder"
+                    >
+                      <img
+                        class="life-story__thumb-img"
+                        src="./assets/jpeg/life/yoga-4.png"
+                        alt="Yoga in practice thumbnail"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="life-story__content">
+                  <h3 class="life-story__title">Yoga Practice</h3>
+                  <p class="life-story__text life-story__text--muted">
+                    Mindfulness & Teaching
+                  </p>
+                  <p class="life-story__text">
+                    I’ve practiced yoga for over seven years. With a desire to
+                    share what I’ve learned, I also became a certified yoga
+                    instructor and have been teaching consistently for the past
+                    two years.
+                  </p>
+                  <p class="life-story__text">
+                    Yoga has helped me find balance between work and life. It
+                    has also taught me to become more focused, patient, and
+                    approach people and situations with greater softness and
+                    understanding.
+                  </p>
+                  <p class="life-story__text">
+                    My interest in mindfulness also led me to join a yoga and
+                    Ayurveda program in India, where I explored meditation,
+                    sound healing, and a slower pace of living.
+                  </p>
+                </div>
+              </article>
+
+              <article class="life-story__block">
+                <div class="life-story__gallery" data-gallery>
+                  <div
+                    class="life-story__image life-story__image--photo is-active"
+                    data-gallery-main
+                    style="background-image: url('./assets/jpeg/life/nature-1.jpg')"
+                  ></div>
+                  <div class="life-story__thumbs">
+                    <button
+                      type="button"
+                      class="life-story__thumb life-story__thumb--photo is-active"
+                      data-gallery-thumb
+                      data-image="./assets/jpeg/life/nature-1.jpg"
+                      data-label="Endurance in Nature"
+                      aria-label="Show endurance placeholder"
+                    >
+                      <img
+                        class="life-story__thumb-img"
+                        src="./assets/jpeg/life/nature-1.jpg"
+                        alt="Endurance in nature thumbnail"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="life-story__thumb life-story__thumb--photo"
+                      data-gallery-thumb
+                      data-image="./assets/jpeg/life/nature-2.jpg"
+                      data-label="Hiking & Distance"
+                      aria-label="Show hiking placeholder"
+                    >
+                      <img
+                        class="life-story__thumb-img"
+                        src="./assets/jpeg/life/nature-2.jpg"
+                        alt="Hiking and distance thumbnail"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="life-story__thumb life-story__thumb--photo"
+                      data-gallery-thumb
+                      data-image="./assets/jpeg/life/nature-3.jpg"
+                      data-label="Diving & Presence"
+                      aria-label="Show diving placeholder"
+                    >
+                      <img
+                        class="life-story__thumb-img"
+                        src="./assets/jpeg/life/nature-3.jpg"
+                        alt="Diving and presence thumbnail"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="life-story__thumb life-story__thumb--photo"
+                      data-gallery-thumb
+                      data-image="./assets/jpeg/life/nature-4.png"
+                      data-label="Camino Walk"
+                      aria-label="Show Camino placeholder"
+                    >
+                      <img
+                        class="life-story__thumb-img"
+                        src="./assets/jpeg/life/nature-4.png"
+                        alt="Camino walk thumbnail"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="life-story__content">
+                  <h3 class="life-story__title">Endurance in Nature</h3>
+                  <p class="life-story__text life-story__text--muted">
+                    Endurance & Exploration
+                  </p>
+                  <p class="life-story__text">
+                    I enjoy outdoor activities that require endurance and
+                    presence, including diving, hiking, mountaineering, and
+                    long-distance running. I also enjoy the process of
+                    gradually building strength and experiencing the small
+                    progress my body makes over time.
+                  </p>
+                  <p class="life-story__text">
+                    I’ve traveled to different places for diving and hiking,
+                    walked part of the Camino de Santiago in Spain, and
+                    completed a full marathon.
+                  </p>
+                  <p class="life-story__text">
+                    At the same time, I also enjoy solo travel. It allows me to
+                    step away from familiar routines and perspectives, slow down
+                    in unfamiliar environments, spend time with myself, reflect,
+                    and observe the world more openly.
+                  </p>
+                  <p class="life-story__text">
+                    These experiences remind me to stay calm, move steadily, and
+                    appreciate consistent progress rather than simply chasing
+                    speed.
+                  </p>
+                </div>
+              </article>
             </div>
 
             <div class="project-details__links">
@@ -137,7 +305,6 @@
                 >Contact Me</a
               >
             </div>
-
           </div>
         </div>
       </div>
@@ -177,8 +344,8 @@
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">Tina Su</h4>
             <p class="main-footer__short-desc">
-              Frontend developer with a passion for building clean, user-friendly
-              digital experiences.
+              Backend software engineer with a calm, long-term approach to
+              systems, work, and life.
             </p>
           </div>
         </div>
