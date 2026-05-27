@@ -59,3 +59,38 @@ if (lightbox) {
     }
   })
 }
+
+// ---
+const lifeGalleries = document.querySelectorAll('[data-gallery]')
+
+for (let i = 0; i < lifeGalleries.length; i++) {
+  const gallery = lifeGalleries[i]
+  const main = gallery.querySelector('[data-gallery-main]')
+  const thumbs = gallery.querySelectorAll('[data-gallery-thumb]')
+
+  for (let j = 0; j < thumbs.length; j++) {
+    thumbs[j].addEventListener('click', () => {
+      const tone = thumbs[j].dataset.tone
+      const image = thumbs[j].dataset.image
+      for (let k = 0; k < thumbs.length; k++) {
+        thumbs[k].classList.remove('is-active')
+      }
+
+      thumbs[j].classList.add('is-active')
+
+      if (main) {
+        main.classList.add('is-switching')
+        window.setTimeout(() => {
+          if (image) {
+            main.className = 'life-story__image life-story__image--photo is-active'
+            main.style.backgroundImage = `url('${image}')`
+          } else {
+            main.className = `life-story__image life-story__image--${tone} is-active`
+            main.style.backgroundImage = ''
+          }
+          main.classList.remove('is-switching')
+        }, 120)
+      }
+    })
+  }
+}
